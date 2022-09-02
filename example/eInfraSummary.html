@@ -1,0 +1,200 @@
+<head>
+  <script src="//unpkg.com/sunburst-chart"></script>
+  <!--<script src="../../dist/sunburst-chart.js"></script>-->
+
+  <style>body { margin: 0 }</style>
+</head>
+<body>
+  <div id="chart"></div>
+
+  <script>
+    const data = {
+      name: 'e-Infra categorization system',
+      color: 'white',
+      children: [{
+        name: 'Access Physical & e-Infrastructures',
+        color: 'magenta',
+        children: [{
+          name: 'Instrument & Equipment',
+          color: 'magenta',
+          children: [{
+            name: 'No Commons',
+            color: 'magenta',
+            children: [{
+              name: 'Other',
+              color: 'magenta',
+              size: 1
+            }]
+          }, {
+            name: 'Some Commons',
+            color: 'magenta',
+            children: [{
+              name: 'Spectrometer',
+              color: 'magenta',
+              size: 1
+            }, {
+              name: 'Radiation',
+              color: 'magenta',
+              size: 1
+            }, {
+              name: 'Microscopy',
+              color: 'magenta',
+              size: 1
+            }, {
+              name: 'Laser',
+              color: 'magenta',
+              size: 1
+            }, {
+              name: 'Geophysical',
+              color: 'magenta',
+              size: 1
+            }, {
+              name: 'Chromatographer',
+              color: 'magenta',
+              size: 1
+            }, {
+              name: 'Cytometer',
+              color: 'magenta',
+              size: 1
+            }, {
+              name: 'Spectrophotometer',
+              color: 'magenta',
+              size: 1
+            }, {
+              name: 'Digitilisation Equipment',
+              color: 'magenta',
+              size: 1
+            }, {
+              name: 'Monument Maintenaince Equipment',
+              color: 'magenta',
+              size: 1
+            }, {
+              name: 'TBC',
+              color: 'magenta',
+              size: 1
+            }]
+          }, {
+            name: 'Most Commons',
+            color: 'magenta',
+            size: 0
+          }, {
+            name: 'All Commons',
+            color: 'magenta',
+            size: 0
+          }]
+        }, {
+          name: 'Material Storage',
+          color: 'magenta',
+          children: [{
+            name: 'No Commons',
+            color: 'magenta',
+            children: [{}]
+          }, {
+            name: 'Some Commons',
+            color: 'magenta',
+            children: [{}]
+          }, {
+            name: 'Most Commons',
+            color: 'magenta',
+            size: 0
+          }, {
+            name: 'All Commons',
+            color: 'magenta',
+            size: 0
+          }]
+        }, {
+          name: 'Network',
+          color: 'magenta',
+          children: [{
+            name: 'No Commons',
+            color: 'magenta',
+            children: [{}]
+          }, {
+            name: 'Some Commons',
+            color: 'magenta',
+            children: [{}]
+          }, {
+            name: 'Most Commons',
+            color: 'magenta',
+            size: 0
+          }, {
+            name: 'All Commons',
+            color: 'magenta',
+            size: 0
+          }]
+        }, {
+          name: 'Compute',
+          color: 'magenta',
+          children: [{
+            name: 'No Commons',
+            color: 'magenta',
+            children: [{}]
+          }, {
+            name: 'Some Commons',
+            color: 'magenta',
+            children: [{}]
+          }, {
+            name: 'Most Commons',
+            color: 'magenta',
+            size: 0
+          }, {
+            name: 'All Commons',
+            color: 'magenta',
+            size: 0
+          }]
+        }, {
+          name: 'Data Storage',
+          color: 'magenta',
+          children: [{
+            name: 'No Commons',
+            color: 'magenta',
+            children: [{}]
+          }, {
+            name: 'Some Commons',
+            color: 'magenta',
+            children: [{}]
+          }, {
+            name: 'Most Commons',
+            color: 'magenta',
+            size: 0
+          }, {
+            name: 'All Commons',
+            color: 'magenta',
+            size: 0
+          }]
+        }]
+      }, {
+        name: 'Sharing & Discovery',
+        color: 'yellow',
+        children: [{}]
+      }, {
+        name: 'Processing & Analysis',
+        color: 'cyan',
+        children: [{}]
+      }, {
+        name: 'Security & Operations',
+        color: 'green',
+        children: [{}]
+      }, {
+        name: 'Training & Support',
+        color: 'red',
+        children: [{}]
+      }, {
+        name: 'Aggregators & Integrators',
+        color: 'orange',
+        children: [{}]
+      }, {
+        name: 'Other',
+        color: 'grey',
+        children: [{}]
+      }]
+    };
+
+    Sunburst()
+      .data(data)
+      .size('size')
+      .color('color')
+      .radiusScaleExponent(1)
+      (document.getElementById('chart'));
+  </script>
+</body>
