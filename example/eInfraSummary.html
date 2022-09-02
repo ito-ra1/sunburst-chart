@@ -524,15 +524,39 @@
           children: [{
             name: 'No Commons',
             color: 'yellow',
-            size: 0
+            children: [{
+              name: 'Libraries',
+              color: 'yellow',
+              size: 1
+            }]
             }, {
             name: 'Some Commons',
             color: 'yellow',
-            size: 0
+            children: [{
+              name: 'Software Repository',
+              color: 'yellow',
+              size: 1
+              }, {
+              name: 'Software Package',
+              color: 'yellow',
+              size: 1
+              }, {
+              name: 'Other',
+              color: 'yellow',
+              children: [{
+                name: 'Data Repository',
+                color: 'yellow',
+                size: 1
+              }]
+            }]
             }, {
             name: 'Most Commons',
             color: 'yellow',
-            size: 0
+            children: [{
+              name: 'Platform',
+              color: 'yellow',
+              size: 1
+            }]
             }, {
             name: 'All Commons',
             color: 'yellow',
